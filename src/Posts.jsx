@@ -29,7 +29,7 @@ export function Posts() {
   });
 
   if (isLoading) {
-    return <h3>Loading...</h3>;
+    return <h3>Fetching in progress...</h3>;
   }
 
   if (isError) {
