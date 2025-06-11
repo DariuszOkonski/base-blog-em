@@ -54,7 +54,10 @@ export function Posts() {
           <li
             key={post.id}
             className='post-title'
-            onClick={() => setSelectedPost(post)}
+            onClick={() => {
+              deleteMutation.reset();
+              setSelectedPost(post);
+            }}
           >
             {post.title}
           </li>
